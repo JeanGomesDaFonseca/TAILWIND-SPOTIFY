@@ -1,4 +1,11 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Home as HomeIcon,
+  Search,
+  Library,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -65,13 +72,64 @@ export default function Home() {
           </nav>
         </aside>
         <main className="flex-1 p-6">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mt-4">
             <button className="rounded-full bg-black/40 p-1">
-              <ChevronLeft/>
+              <ChevronLeft />
             </button>
             <button className="rounded-full bg-black/40 p-1">
-              <ChevronRight/>
+              <ChevronRight />
             </button>
+          </div>
+          <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
+            <div className="bg-white/10 rounded overflow-hidden">
+              <Image
+                src="/album.jpeg"
+                width={80}
+                height={120}
+                alt="Capa do album And Justice For All"
+              />{" "}
+            </div>
           </div>
         </main>
       </div>
